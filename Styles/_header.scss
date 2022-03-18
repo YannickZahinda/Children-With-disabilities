@@ -1,0 +1,206 @@
+@mixin flexCenter($justifyContent, $flexDirection) {
+  display: flex;
+  justify-content: $justifyContent;
+  flex-direction: $flexDirection;
+  align-items: center;
+}
+
+// header {
+//   box-shadow: 0px 0px 10px 0px $colorSwatch1;
+//   width: $Width;
+
+//   .hamburger-menu {
+//     padding: 15px;
+//   }
+
+//   .menu-line {
+//     // background-color: $colorSwatch1;
+//     // margin: 3px;
+//     // width: $myWidth/5;
+//     // height: $myHeigh/30;
+//     // border-radius: 3px;
+//     // display: none;
+//     // @media screen and (max-width: 768px) {
+//     //   & {
+//     //     display: block;
+//     //   }
+//     // }
+//   }
+//   .nav-bar {
+//     // @include flexCenter(space-around, row);
+//     // padding: 15px 15px;
+//     // color: $colorSwatch1;
+//     // width: $Width;
+//     // .my-logo-img {
+//     //   height: $myHeigh/2;
+//     //   width: $myWidth/2;
+//     //   border-radius: $Radius - 10;
+//     //   flex: 1;
+//     //   @media screen and (max-width: 768px) {
+//     //     & {
+//     //       display: none;
+//     //     }
+//       }
+//     }
+//     .nav-links {
+//       // list-style-type: none;
+//       // width: $Width - 30;
+//       // .close-btn-mobile{
+//       //   display: none;
+//       // }
+//       // @include flexCenter(space-around, row);
+//       // .nav-link {
+//       //   padding: 7px;
+//       //   a {
+//       //     text-decoration: none;
+//       //     color: $colorSwatch1;
+//       //   }
+//       //   .links{
+//       //     @include flexCenter(space-around, row);
+//       //   }
+//       // }
+//       @media screen and (max-width: 768px) {
+//         & {
+//           display: none;
+//         }
+//       }
+//     }
+//   }
+// }
+
+header {
+  // padding: 20px 0 20px 0;
+  .nav-contact-bar {
+    ul {
+      padding: 8px;
+
+      .facebook-logo {
+        width: $myWidth - 90;
+        height: $myHeigh - 80;
+      }
+
+      a {
+        text-decoration: none;
+        color: $colorSwatch3;
+        margin: 10px;
+      }
+
+      list-style-type: none;
+
+      @include flexCenter(flex-end, row);
+    }
+
+    background-color: $colorSwatch1;
+    text-align: right;
+
+    @media screen and (max-width: 768px) {
+      & {
+        display: none;
+      }
+    }
+  }
+
+  .nav-bar {
+    @include flexCenter(space-around, row);
+
+    padding: 20px;
+
+    .my-logo-img {
+      height: $myHeigh / 2;
+      width: $myHeigh / 2;
+    }
+
+    .capagne-logo {
+      border: 4px solid $colorSwatch2;
+      padding: 15px;
+
+      a {
+        text-decoration: none;
+        color: $colorSwatch2;
+      }
+    }
+
+    .links {
+      @include flexCenter(space-around, row);
+
+      list-style-type: none;
+
+      a {
+        text-decoration: none;
+        color: $colorSwatch1;
+        margin: 15px;
+      }
+
+      @media screen and (max-width: 768px) {
+        & {
+          @include flexCenter(center, column);
+
+          gap: 10px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      & {
+        .capagne-logo {
+          border: none;
+          color: $colorSwatch3;
+        }
+
+        @include flexCenter(center, column);
+
+        padding: 20px;
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    & {
+      .active {
+        display: flex;
+        padding: 10px;
+
+        .bar {
+          background-color: $colorSwatch1;
+          height: $myHeigh - 97;
+          width: $myWidth - 75;
+          margin: 4px;
+          display: block;
+          border-radius: 3px;
+        }
+
+        .bar-one {
+          position: absolute;
+          transform: rotate(40deg);
+          transform-origin: bottom;
+          transition: transform 0.7s ease;
+        }
+
+        .bar-two {
+          transform: rotate(-40deg);
+          transform-origin: top;
+          transition: transform 0.7s ease;
+        }
+
+        .bar-three {
+          opacity: 0;
+        }
+      }
+
+      .burger-menu {
+        padding: 10px;
+
+        .bar {
+          background-color: $colorSwatch1;
+          height: $myHeigh - 97;
+          width: $myWidth - 75;
+          margin: 4px;
+          display: block;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+}

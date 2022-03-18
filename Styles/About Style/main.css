@@ -1,0 +1,277 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.about-description {
+  padding: 20px;
+  background-color: #d3d3d3;
+  text-align: center;
+}
+
+.about-description .about-heading1 {
+  background-color: #d3d3d3;
+  text-align: center;
+  color: #ec5242;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.about-first-paragraph {
+  width: 97%;
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid #272a3177;
+  color: #272a31;
+  font-size: 13px;
+  background-color: #fff;
+}
+
+.about-footer {
+  margin-top: 30px;
+  color: #272a31a2;
+}
+
+.email {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #272a31;
+}
+
+.about-logo-section {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #272a31b0;
+}
+
+.about-logo-heading2 {
+  color: #272a31;
+  align-self: center;
+  padding-bottom: 25px;
+}
+
+.logo-container {
+  height: 150px;
+  width: 70%;
+  border: 1px solid #272a3170;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.about-logo {
+  width: 60%;
+  height: 100%;
+}
+
+.see-the-past {
+  padding: 30px;
+  height: 700px;
+}
+
+/* .pastpic-one-container,
+.pastpic-two-container {
+  width: 65%;
+  height: 300px;
+  box-shadow: 0 0 0 150px inset, 0 0 5px #000;
+  transition: box-shadow 0.5s;
+  float: left;
+} */
+
+.pastpic-one-container,
+.pastpic-two-container {
+  box-shadow: 0 0 0 150px inset, 0 0 5px #000;
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+  height: 200px;
+
+  /* display: block; */
+  background-image: url(./assets/speaker1.png);
+  font-size: 22px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(252, 249, 251);
+  border: 2px solid;
+  text-align: center;
+
+  /* display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s 0.5s;
+}
+
+.pastpic-one-container:hover,
+.pastpic-two-container:hover {
+  box-shadow:
+    0 0 5px inset,
+    0 0 5px rgb(65, 3, 3),
+    0 0 10px rgb(65, 3, 3),
+    0 0 5px rgb(65, 3, 3) inset;
+  transition: box-shadow 0.5s;
+}
+
+.pastpic-one-container:hover::after,
+.pastpic-two-container:hover::after {
+  opacity: 0.4;
+  transition: opacity 0.5s;
+}
+
+.img-background {
+  background-image: url("https://g5-assets-cld-res.cloudinary.com/image/upload/x_0,y_0,h_612,w_612,c_crop/q_auto,f_auto,fl_lossy,g_center,h_355,w_355/v1642454966/g5/g5-c-5j0l7ya37-harmony-senior-services/g5-cl-1ja5x3hvjv-harmony-at-savannah/uploads/Value_of_a_Visit_Pop_Up_jsqpes.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: rgba(230, 17, 45, 0.336);
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.img-background::after {
+  content: "2014 Playground for child with disabilities";
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+.partners-list {
+  background-color: #272a31;
+  height: max-content;
+  padding: 30px;
+}
+
+.partn-headg {
+  color: #d3d3d3;
+  text-align: center;
+  height: 100%;
+}
+
+.partners {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.Mozila {
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.Google {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.397);
+}
+
+.Naver {
+  color: #d3d3d3;
+  font-size: 30px;
+}
+
+.daumkakao {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.377);
+}
+
+.Airtel {
+  font-size: 28px;
+  font-family:
+    "Trebuchet MS",
+    "Lucida Sans Unicode",
+    "Lucida Grande",
+    "Lucida Sans",
+    Arial,
+    sans-serif;
+  color: rgba(255, 255, 255, 0.781);
+}
+
+.footer {
+  display: flex;
+  padding: 14px;
+  justify-content: space-around;
+  box-shadow: 1px 3px 3px #272a31;
+}
+
+.footer-logo {
+  display: flex;
+  margin: 15px;
+}
+
+.footer-description {
+  margin: 15px;
+}
+
+.footer-icon {
+  width: 30px;
+  height: 30px;
+  margin: 9px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-first-paragraph {
+    width: 60%;
+  }
+
+  .about-description {
+    padding: 50px;
+  }
+
+  .about-logo-prgrph {
+    margin-bottom: 40px;
+  }
+
+  .about-logo-section {
+    padding: 50px;
+  }
+
+  .about-logo {
+    width: 33%;
+    height: 100%;
+  }
+
+  .logo-container {
+    width: 40%;
+  }
+
+  .about-logo-heading2 {
+    text-align: center;
+  }
+
+  .see-past-prgrph {
+    text-align: center;
+  }
+
+  .see-past-article-container {
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .img-background {
+    width: 40%;
+  }
+
+  .img-background:hover {
+    cursor: pointer;
+  }
+
+  .partners-list {
+    padding: 40px;
+  }
+
+  .partn-headg {
+    padding-bottom: 40px;
+  }
+
+  .see-the-past {
+    height: 100%;
+  }
+}

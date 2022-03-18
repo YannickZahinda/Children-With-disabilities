@@ -1,0 +1,626 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+header .nav-contact-bar {
+  background-color: #272a31;
+  text-align: right;
+}
+
+header .nav-contact-bar ul {
+  padding: 8px;
+  list-style-type: none;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+header .nav-contact-bar ul .facebook-logo {
+  width: 10px;
+  height: 20px;
+}
+
+header .nav-contact-bar ul a {
+  text-decoration: none;
+  color: #d3d3d3;
+  margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  header .nav-contact-bar {
+    display: none;
+  }
+}
+
+header .nav-bar {
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
+}
+
+header .nav-bar .my-logo-img {
+  height: 50px;
+  width: 50px;
+}
+
+header .nav-bar .capagne-logo {
+  border: 4px solid #ec5242;
+  padding: 15px;
+}
+
+header .nav-bar .capagne-logo a {
+  text-decoration: none;
+  color: #ec5242;
+}
+
+header .nav-bar .links {
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+header .nav-bar .links a {
+  text-decoration: none;
+  color: #272a31;
+  margin: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  header .nav-bar .links {
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    display: flex;
+  }
+
+  header .nav-bar {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 20px;
+    display: none;
+  }
+
+  header .nav-bar .capagne-logo {
+    border: none;
+    color: #d3d3d3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .active {
+    display: flex;
+    padding: 10px;
+  }
+
+  header .active .bar {
+    background-color: #272a31;
+    height: 3px;
+    width: 25px;
+    margin: 4px;
+    display: block;
+    border-radius: 3px;
+  }
+
+  header .active .bar-one {
+    position: absolute;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    -webkit-transition: -webkit-transform 0.7s ease;
+    transition: -webkit-transform 0.7s ease;
+    transition: transform 0.7s ease;
+    transition: transform 0.7s ease, -webkit-transform 0.7s ease;
+  }
+
+  header .active .bar-two {
+    -webkit-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    -webkit-transition: -webkit-transform 0.7s ease;
+    transition: -webkit-transform 0.7s ease;
+    transition: transform 0.7s ease;
+    transition: transform 0.7s ease, -webkit-transform 0.7s ease;
+  }
+
+  header .active .bar-three {
+    opacity: 0;
+  }
+
+  header .burger-menu {
+    padding: 10px;
+  }
+
+  header .burger-menu .bar {
+    background-color: #272a31;
+    height: 3px;
+    width: 25px;
+    margin: 4px;
+    display: block;
+    border-radius: 3px;
+  }
+}
+
+.button-see-more {
+  display: none;
+}
+
+body {
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#close-btn {
+  border: none;
+  width: 100%;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  margin: 10px;
+  border-radius: 5px;
+  height: max-content;
+  padding: 10px;
+  color: #222020;
+}
+
+.container {
+  width: 100%;
+}
+
+.container main {
+  background: url("https://www.unicef.org/sites/default/files/styles/press_release_feature/public/20181029_Jordan_Playground.jpg?itok=Z8DayInM");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: max-content;
+}
+
+.container main h1 {
+  color: #ec5242;
+  border-bottom: 1px solid rgba(233, 229, 229, 0.952);
+  padding: 15px 15px;
+}
+
+.container main .content {
+  padding: 100px 100px;
+  width: 100%;
+  color: #ec5242;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98suVi4t9yKf-GneBDGbZ0aoywsd5i8jehg&usqp=CAU");
+  background: #e5e5e6d5;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container main .content h1 {
+  font-weight: 200;
+}
+
+.container main .content .paragraph-description {
+  font-size: 60px;
+  color: #ec5242;
+}
+
+.container main .content .paragraph2 {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px;
+  color: #272a31;
+  font-weight: 300;
+}
+
+.container main .content .date {
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #272a31;
+}
+
+.container main .content .footer-1 {
+  font-weight: 200;
+  color: #272a31;
+}
+
+@media screen and (max-width: 768px) {
+  .container main .content {
+    padding: 30px;
+  }
+}
+
+.container main .main-program {
+  padding: 50px;
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: url("https://wallpaperaccess.com/full/173782.jpg") no-repeat;
+  background-size: cover;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.container main .main-program .articles-container {
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 30px 0 30px 0;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .container main .main-program .articles-container {
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.container main .main-program h2 {
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.856);
+}
+
+.container main .main-program .article {
+  color: rgba(255, 255, 255, 0.87);
+  width: 200px;
+  background-color: rgba(172, 163, 163, 0.295);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container main .main-program .article .speaker {
+  height: 100px;
+  width: 100px;
+}
+
+.container main .main-program .article h3 {
+  padding: 10px 0 10px 0;
+  color: #ec5242;
+}
+
+.container main .main-program .article:hover {
+  border: 1px solid #d3d3d3;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .container main .main-program .article .speaker {
+    height: 40px;
+    width: 40px;
+  }
+
+  .container main .main-program .article {
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: rgba(172, 163, 163, 0.295);
+    width: 100%;
+    gap: 10px;
+    margin: 10px;
+    padding: 20px;
+    height: max-content;
+  }
+
+  .container main .main-program .article h3 {
+    color: #ec5242;
+  }
+
+  .container main .main-program .article p {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container main .main-program {
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+}
+
+.container main .featured-speakers-container {
+  text-align: center;
+  padding: 30px 30px;
+}
+
+.container main .featured-speakers-container h1 {
+  color: #272a31;
+  border: none;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.container main .featured-speakers-container .featured-speakers {
+  text-align: start;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.container main .featured-speakers-container .featured-speakers .feature-speaker {
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: max-content;
+  margin: 20px;
+  padding: 15px;
+  background: url("https://i2.wp.com/files.123freevectors.com/wp-content/original/102624-black-square-pattern.jpg?w=800&q=95");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position-y: 9px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container main .featured-speakers-container .featured-speakers .feature-speaker {
+    background-size: 23%;
+    background-position: 9px top;
+  }
+}
+
+.container main .featured-speakers-container .featured-speakers .feature-speaker .speaker {
+  height: 120px;
+  width: 120px;
+  margin-right: 15px;
+}
+
+.container main .featured-speakers-container .featured-speakers .feature-speaker .speaker-description {
+  color: #ec5242;
+  font-size: 13px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 768px) {
+  .container main .featured-speakers-container .featured-speakers {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+.container main .partners-list {
+  text-align: center;
+  vertical-align: middle;
+  background-color: #272a31;
+  height: 180px;
+  padding: 40px;
+}
+
+.container main .partners-list .partn-headg {
+  color: rgba(255, 255, 255, 0.829);
+  text-decoration: none;
+  width: max-content;
+  margin: 0 auto;
+  border: none;
+}
+
+.container main .partners-list .partn-headg:hover {
+  border-bottom: 1px solid #ec5242;
+}
+
+.container main .partners-list .partners {
+  padding-top: 30px;
+  list-style-type: none;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container main .partners-list .partners .Mozila {
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.container main .partners-list .partners .Google {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.397);
+}
+
+.container main .partners-list .partners .Naver {
+  color: #d3d3d3;
+  font-size: 30px;
+}
+
+.container main .partners-list .partners .daumkakao {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.377);
+}
+
+.container main .partners-list .partners .Airtel {
+  font-size: 28px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.781);
+}
+
+@media screen and (max-width: 768px) {
+  .container main .partners-list .partners {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container main .partners-list {
+    height: max-content;
+    padding: 15px;
+  }
+}
+
+footer {
+  padding: 30px 30px;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+footer .footer-logo {
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: rgba(65, 60, 60, 0.87);
+}
+
+footer .footer-icon {
+  height: 33.33333px;
+  width: 33.33333px;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    gap: 10px;
+  }
+
+  footer .footer-icon {
+    padding-right: 8px;
+  }
+}
