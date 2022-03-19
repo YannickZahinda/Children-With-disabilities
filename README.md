@@ -35,9 +35,6 @@ To get a local copy up and running follow these simple example steps.
 
 <img width="300" alt="Screen Shot 2022-03-19 at 09 14 39" src="https://user-images.githubusercontent.com/91213045/159111618-64f72969-f43a-4944-98fb-c9638855c9ac.png">
 
-👤 **Author1**
-
-The original design author is Cindy Shin Behance
 
 👤 **Author2**
 
@@ -52,6 +49,9 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
+## Acknowledgment
+
+***Cindy Shin Behance***, original design author.
 
 
 ## 📝 License
