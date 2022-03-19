@@ -1,0 +1,352 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+@import "./variables";
+@import "./header";
+@import "./feature";
+
+body {
+  @include flexCenter(center, row);
+
+  align-items: center;
+}
+
+#close-btn {
+  border: none;
+  width: 100%;
+  align-self: center;
+  margin: 10px;
+  border-radius: 5px;
+  height: max-content;
+  padding: 10px;
+  color: rgb(34, 32, 32);
+}
+
+.container {
+  width: 100%;
+
+  main {
+    background: url("https://www.unicef.org/sites/default/files/styles/press_release_feature/public/20181029_Jordan_Playground.jpg?itok=Z8DayInM");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: $Width;
+    height: max-content;
+
+    h1 {
+      color: $colorSwatch2;
+      border-bottom: 1px solid rgba(233, 229, 229, 0.952);
+      padding: 15px 15px;
+    }
+
+    .content {
+      padding: 100px 100px;
+      width: $Width;
+      color: $colorSwatch2;
+      background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98suVi4t9yKf-GneBDGbZ0aoywsd5i8jehg&usqp=CAU");
+      background: #e5e5e6d5;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      h1 {
+        font-weight: 200;
+      }
+
+      .paragraph-description {
+        font-size: 60px;
+        color: $colorSwatch2;
+      }
+
+      .paragraph2 {
+        border: 1px solid #fff;
+        border-radius: $Radius/3;
+        padding: 5px;
+        color: $colorSwatch1;
+        font-weight: 300;
+      }
+
+      .date {
+        padding-top: 20px;
+        font-size: 30px;
+        font-weight: 600;
+        color: $colorSwatch1;
+      }
+
+      .footer-1 {
+        font-weight: 200;
+        color: $colorSwatch1;
+      }
+
+      @media screen and (max-width: 768px) {
+        & {
+          padding: 30px;
+        }
+      }
+    }
+
+    .main-program {
+      padding: 50px;
+      width: $Width;
+
+      @include flexCenter(center, column);
+
+      background: url("https://wallpaperaccess.com/full/173782.jpg") no-repeat;
+      background-size: cover;
+
+      .articles-container {
+        @include flexCenter(center, row);
+
+        margin: 30px 0 30px 0;
+        width: $Width;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 768px) {
+          & {
+            @include flexCenter(center, column);
+
+            width: $Width;
+          }
+        }
+      }
+
+      flex-wrap: wrap;
+
+      h2 {
+        text-decoration: underline;
+        color: rgba(255, 255, 255, 0.856);
+      }
+
+      .article {
+        .speaker {
+          height: $myHeigh;
+          width: $myWidth;
+        }
+
+        color: rgba(255, 255, 255, 0.87);
+        width: $myWidth * 2;
+        background-color: rgba(172, 163, 163, 0.295);
+        margin: 10px;
+        padding: 20px;
+        text-align: center;
+
+        h3 {
+          padding: 10px 0 10px 0;
+          color: $colorSwatch2;
+        }
+
+        &:hover {
+          border: 1px solid $colorSwatch3;
+          cursor: pointer;
+        }
+
+        @media screen and (max-width: 768px) {
+          .speaker {
+            height: $myHeigh - 60;
+            width: $myWidth - 60;
+          }
+
+          & {
+            @include flexCenter(space-around, row);
+
+            color: rgba(255, 255, 255, 0.87);
+            background-color: rgba(172, 163, 163, 0.295);
+            width: $Width;
+            gap: 10px;
+            margin: 10px;
+            padding: 20px;
+            height: max-content;
+
+            h3 {
+              // padding: 0 10px 0 10px;
+              color: $colorSwatch2;
+            }
+
+            p {
+              width: $Width;
+              font-size: 12px;
+              // padding-left: 10px;
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        & {
+          @include flexCenter(center, column);
+
+          padding: 20px;
+          width: 100%;
+        }
+      }
+    }
+
+    .featured-speakers-container {
+      text-align: center;
+      padding: 30px 30px;
+
+      h1 {
+        color: $colorSwatch1;
+        border: none;
+        align-self: center;
+      }
+
+      .featured-speakers {
+        text-align: start;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+
+        .feature-speaker {
+          @include flexCenter(space-around, row);
+
+          height: max-content;
+          margin: 20px;
+          padding: 15px;
+          background: url("https://i2.wp.com/files.123freevectors.com/wp-content/original/102624-black-square-pattern.jpg?w=800&q=95");
+          background-repeat: no-repeat;
+          background-size: 20%;
+          background-position-y: 9px;
+
+          @media only screen and (max-width: 768px) {
+            background-size: 23%;
+            background-position: 9px top;
+          }
+
+          .speaker {
+            height: $myHeigh + 20;
+            width: $myWidth + 20;
+            margin-right: 15px;
+          }
+
+          .speaker-description {
+            color: $colorSwatch2;
+            font-size: 13px;
+            font-family: 'Times New Roman', Times, serif;
+          }
+        }
+
+        @media screen and (max-width: 768px) {
+          & {
+            display: grid;
+            grid-template-columns: 1fr;
+          }
+        }
+      }
+    }
+
+    .partners-list {
+      text-align: center;
+      vertical-align: middle;
+      background-color: $colorSwatch1;
+      height: $myHeigh + 80;
+      padding: 40px;
+
+      .partn-headg {
+        color: rgba(255, 255, 255, 0.829);
+        text-decoration: none;
+        width: max-content;
+        margin: 0 auto;
+        border: none;
+
+        &:hover {
+          border-bottom: 1px solid $colorSwatch2;
+        }
+      }
+
+      .partners {
+        padding-top: 30px;
+        list-style-type: none;
+
+        .Mozila {
+          font-weight: bold;
+          font-size: 30px;
+          color: rgba(255, 255, 255, 0.5);
+        }
+
+        .Google {
+          font-family:
+            "Franklin Gothic Medium",
+            "Arial Narrow",
+            Arial,
+            sans-serif;
+          font-size: 30px;
+          color: rgba(255, 255, 255, 0.397);
+        }
+
+        .Naver {
+          color: $colorSwatch3;
+          font-size: 30px;
+        }
+
+        .daumkakao {
+          font-size: 25px;
+          color: rgba(255, 255, 255, 0.377);
+        }
+
+        .Airtel {
+          font-size: 28px;
+          font-family:
+            "Trebuchet MS",
+            "Lucida Sans Unicode",
+            "Lucida Grande",
+            "Lucida Sans",
+            Arial,
+            sans-serif;
+          color: rgba(255, 255, 255, 0.781);
+        }
+
+        @include flexCenter(space-around, row);
+
+        @media screen and (max-width: 768px) {
+          & {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+          }
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        & {
+          height: max-content;
+          padding: 15px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding: 30px 30px;
+
+  @include flexCenter(space-around, row);
+
+  background-color: #fff;
+
+  .footer-logo {
+    @include flexCenter(center, row);
+
+    color: rgba(65, 60, 60, 0.87);
+  }
+
+  .footer-icon {
+    height: $myHeigh/3;
+    width: $myWidth/3;
+  }
+
+  @media screen and (max-width: 768px) {
+    & {
+      gap: 10px;
+    }
+
+    .footer-icon {
+      padding-right: 8px;
+    }
+  }
+}
