@@ -2,7 +2,7 @@ const featuredSpeaker = document.getElementById('featured-speakers');
 const featureImgSrc = document.querySelectorAll('.speaker');
 const featuredSpeakerData = [
   {
-    imgSrc: './assets/speaker-three.JPG',
+    imgSrc: './assets/speaker1.png',
     fullName: 'Yannick Muliluza',
     speakerDescrition: 'Manager at AMJ Company',
     paragrapheContent: 'The literature review was carried out by a team of researchers',
@@ -16,14 +16,14 @@ const featuredSpeakerData = [
 
   },
   {
-    imgSrc: './assets/speaker(1).jpeg',
+    imgSrc: './assets/speaker1.png',
     fullName: 'Yan Zah',
     speakerDescrition: 'FullStack Software Developer at Microverse',
     paragrapheContent: 'The team was brought together during the initial bidding process.',
 
   },
   {
-    imgSrc: './assets/speaker-three.JPG',
+    imgSrc: './assets/speaker1.png',
     fullName: 'Joyce All',
     speakerDescrition: 'Manager at AMJ Company',
     paragrapheContent: 'The review process involved co-ordinated team work',
