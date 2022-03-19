@@ -52,6 +52,11 @@
   color: #272a31;
   align-self: center;
   padding-bottom: 25px;
+  font-size: 27px;
+}
+
+.heading2 {
+  color: #272a31;
 }
 
 .logo-container {
@@ -227,6 +232,15 @@
 
   .about-logo-heading2 {
     text-align: center;
+    font-size: 27px;
+    color: #272a31;
+  }
+
+  .heading2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #272a31;
   }
 
   .see-past-prgrph {
@@ -253,6 +267,7 @@
 
   .partn-headg {
     padding-bottom: 40px;
+    font-size: 26px;
   }
 
   .see-the-past {
