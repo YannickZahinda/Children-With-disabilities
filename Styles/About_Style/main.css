@@ -72,15 +72,6 @@
   height: 700px;
 }
 
-/* .pastpic-one-container,
-.pastpic-two-container {
-  width: 65%;
-  height: 300px;
-  box-shadow: 0 0 0 150px inset, 0 0 5px #000;
-  transition: box-shadow 0.5s;
-  float: left;
-} */
-
 .pastpic-one-container,
 .pastpic-two-container {
   box-shadow: 0 0 0 150px inset, 0 0 5px #000;
@@ -88,19 +79,12 @@
   width: 100%;
   margin: 0 auto;
   height: 200px;
-
-  /* display: block; */
   background-image: url(./assets/speaker1.png);
   font-size: 22px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(252, 249, 251);
   border: 2px solid;
   text-align: center;
-
-  /* display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex; */
   display: flex;
   justify-content: center;
   align-items: center;
