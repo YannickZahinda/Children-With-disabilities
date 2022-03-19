@@ -5,44 +5,44 @@ const featuredSpeakerData = [
     imgSrc: './assets/speaker-three.JPG',
     fullName: 'Yannick Muliluza',
     speakerDescrition: 'Manager at AMJ Company',
-    paragrapheContent: 'The literature review was carried out by a team of researchers'
+    paragrapheContent: 'The literature review was carried out by a team of researchers',
 
   },
   {
     imgSrc: './assets/speaker1.png',
     fullName: 'Joyce All',
     speakerDescrition: 'FullStack Software Developer at Microverse',
-    paragrapheContent: 'The literature review was carried out by a team of researchers'
+    paragrapheContent: 'The literature review was carried out by a team of researchers',
 
   },
   {
     imgSrc: './assets/speaker(1).jpeg',
     fullName: 'Yan Zah',
     speakerDescrition: 'FullStack Software Developer at Microverse',
-    paragrapheContent: 'The team was brought together during the initial bidding process.'
+    paragrapheContent: 'The team was brought together during the initial bidding process.',
 
   },
   {
     imgSrc: './assets/speaker-three.JPG',
     fullName: 'Joyce All',
     speakerDescrition: 'Manager at AMJ Company',
-    paragrapheContent: 'The review process involved co-ordinated team work'
+    paragrapheContent: 'The review process involved co-ordinated team work',
 
   },
   {
     imgSrc: './assets/speaker1.png',
     fullName: 'Yan Zah',
     speakerDescrition: 'FullStack Software Developer at Microverse',
-    paragrapheContent: 'In further discussions with UNICEF shortly before the completion date for'
+    paragrapheContent: 'In further discussions with UNICEF shortly before the completion date for',
 
   },
   {
     imgSrc: './assets/speaker1.png',
     fullName: 'Yan Zah',
     speakerDescrition: 'FullStack Software Developer at Microverse',
-    paragrapheContent: 'Teacher educators (who are they, how are they trained and supported,disabilities)'
+    paragrapheContent: 'Teacher educators (who are they, how are they trained and supported,disabilities)',
 
-  }
+  },
 ];
 
 featuredSpeaker.innerHTML = `
