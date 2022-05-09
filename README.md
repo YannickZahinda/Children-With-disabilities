@@ -9,7 +9,7 @@ HTML CSS Javascript
 
 ## Live Demo
 
-[Link to my Capstone](https://yannickzahinda.github.io/Capstone-project/)
+[Link to my Capstone](https://yannickzahinda.github.io/Children-With-disabilities/)
 
 ## Getting Started
 
